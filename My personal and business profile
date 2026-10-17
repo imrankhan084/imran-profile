@@ -133,7 +133,7 @@ const PROFILE = {
     {icon:"⌂", title:"Glowlora Beauty Website", description:"Visit my online store", url:"https://glowlorabeauty.com/", category:"Website"}
   ],
   businesses: [
-    {name:"Glowlora", category:"BEAUTY & SKINCARE", description:"🌸 Premium skincare, makeup & beauty products for your everyday glow.", url:"https://glowlorabeauty.com/"},
+    {name:"Glowlora Beauty", category:"BEAUTY & SKINCARE", description:"🌸 Premium skincare, makeup & beauty products for your everyday glow.", url:"https://glowlorabeauty.com/"},
     {name:"Coming soon", category:"NEW VENTURE", description:"Something new is on the way.", url:""}
   ],
   contact: [
