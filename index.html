@@ -169,8 +169,30 @@ header.top #navBrand small{
   -webkit-text-fill-color:#d9c08a;color:#d9c08a;
 }
 </style>
+
+<style>
+/* Announcement marquee bar */
+.announce-marquee{background:#141436;padding:8px 12px;overflow:hidden}
+.announce-pill{max-width:1400px;margin:0 auto;border-radius:999px;background:linear-gradient(180deg,#2e2e75,#23235c);border:1px solid #3d3d8a;box-shadow:0 2px 14px rgba(0,0,0,.35);overflow:hidden;padding:9px 0}
+.announce-track{display:flex;width:max-content;animation:announce-scroll 28s linear infinite}
+.announce-marquee:hover .announce-track{animation-play-state:paused}
+@keyframes announce-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.announce-chunk{display:flex;align-items:center;width:max-content;flex-shrink:0}
+.announce-msg{color:#fff;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;margin-right:2.4rem}
+.announce-star{color:#5ee6f0;font-size:16px;line-height:1;margin-right:2.4rem;flex-shrink:0}
+@media (prefers-reduced-motion:reduce){.announce-track{animation:none}}
+</style>
 </head>
 <body>
+<div class="announce-marquee" role="note" aria-label="Announcements">
+  <div class="announce-pill">
+    <div class="announce-track">
+      <div class="announce-chunk"><span class="announce-msg">Entrepreneur</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">Performance Marketing</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">E-commerce</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">Glowlora Beauty</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">Jannah Dates</span><span class="announce-star" aria-hidden="true">&#10022;</span></div>
+      <div class="announce-chunk" aria-hidden="true"><span class="announce-msg">Entrepreneur</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">Performance Marketing</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">E-commerce</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">Glowlora Beauty</span><span class="announce-star" aria-hidden="true">&#10022;</span><span class="announce-msg">Jannah Dates</span><span class="announce-star" aria-hidden="true">&#10022;</span></div>
+    </div>
+  </div>
+</div>
+
 <header class="top">
   <div class="wrap">
     <nav class="nav"><a class="brand" href="#top" id="navBrand">Imran Hossain Khan<small>PERSONAL • BUSINESS • CONNECT</small></a><div class="sw" role="group" aria-label="Language"><button data-l="bn">বাং</button><button data-l="en">EN</button></div></nav>
